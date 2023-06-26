@@ -1,0 +1,41 @@
+#skills {
+  height: 12vh;
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+  overflow: hidden;
+}
+
+#skills ul {
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+#skills ul li {
+  margin: auto;
+}
+.slider {
+  animation: scroll 40s linear infinite;
+  -webkit-animation: scroll 3s linear infinite;
+  width: calc(200px * 14);
+}
+
+.keyword {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+@keyframes scroll {
+  0% {
+    -webkit--transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit--transform: translateX(calc(-200px * 7));
+    transform: translateX(calc(-200px * 7));
+  }
+}

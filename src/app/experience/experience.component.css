@@ -1,0 +1,37 @@
+.split-50 {
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+#experience {
+  width: 100%;
+  min-height: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  color: #000;
+}
+
+#experience h3 {
+  margin-top: 8%;
+  margin-left: 10%;
+}
+
+.container-exp {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.subcontainer-exp {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .split-50 {
+    width: 100%;
+  }
+}

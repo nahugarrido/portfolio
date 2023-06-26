@@ -1,1 +1,71 @@
-/* You can add global styles to this file, and also import other style files */
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&family=Poppins:wght@400;500;600;700;800;900&display=swap");
+/* 
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+ */
+
+/* Colores */
+:root {
+  --test-color1: rgb(38, 153, 99);
+  --test-color2: brown;
+  --hover-color: #00c3ff;
+  --bg-section-experience: rgb(255, 255, 255);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  max-width: 100vw;
+  background-color: rgb(10, 8, 26);
+  background-color: var(--bg-section-experience);
+
+  font-family: "Nunito Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+p {
+  font-size: 16px;
+}
+
+h2 {
+  position: relative;
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 60px;
+  height: 8px;
+  background-color: var(--hover-color);
+}
+
+h3 {
+  position: relative;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 60px;
+  height: 8px;
+  background-color: var(--hover-color);
+}
+
+.testeo-scroll {
+  height: 200vh;
+}

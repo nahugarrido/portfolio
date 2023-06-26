@@ -1,0 +1,37 @@
+:host {
+  width: 50%;
+  height: auto;
+}
+
+.experience-item {
+  width: 80%;
+  height: auto;
+  position: relative;
+  padding: 0 10px;
+  margin: 5% 0;
+  border-left: 3px solid var(--hover-color);
+}
+
+.experience-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 3px solid var(--hover-color);
+  background-color: var(--bg-section-experience);
+  z-index: 100;
+}
+
+@media (max-width: 768px) {
+  :host {
+    width: 100%;
+  }
+
+  .experience-item {
+    width: 100%;
+    padding: 10px 20px;
+  }
+}
